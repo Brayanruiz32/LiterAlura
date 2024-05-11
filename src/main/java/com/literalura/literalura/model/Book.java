@@ -1,10 +1,12 @@
 package com.literalura.literalura.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
@@ -41,6 +43,7 @@ public class Book {
         this.title = title;
         this.languages = language;
         this.totalDownloads = totalDownloads;
+        this.authors = new ArrayList<Author>();
     }
 
     public Book() {
@@ -74,8 +77,8 @@ public class Book {
         return authors;
     }
 
-    public void setAuthors(List<Author> authors) {
-        this.authors = authors;
+    public void setAuthors(Author authors) {
+        this.authors.add(authors);
     }
 
     public List<String> getLanguage() {

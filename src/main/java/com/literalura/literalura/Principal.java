@@ -15,15 +15,10 @@ public class Principal {
     private ConvierteDatos convertidor = new ConvierteDatos();
     private Scanner teclado = new Scanner(System.in);
     private BookService servicio;
-    
-
-
 
     public Principal(BookService servicio) {
         this.servicio = servicio;
     }
-
-
 
     public void logicaPrincipal() {
 
@@ -43,28 +38,27 @@ public class Principal {
                     buscarLibro();
                     break;
                 // case 2:
-                //     listarLibros();
-                //     break;
+                // listarLibros();
+                // break;
                 // case 3:
-                //     listarAutores();
-                //     break;
+                // listarAutores();
+                // break;
                 // case 4:
-                //     listarAutoresVivos();
-                //     break;
+                // listarAutoresVivos();
+                // break;
                 // case 5:
-                //     listarLibroXIdioma();
-                //     break;
+                // listarLibroXIdioma();
+                // break;
                 default:
                     break;
             }
 
             System.out.println(menu);
             opcion = Integer.parseInt(teclado.nextLine());
+
         }
         System.out.println("Saliendo...");
     }
-
-
 
     public void buscarLibro() {
         System.out.println("Ingrese el nombre del libro que desea buscar");
@@ -74,12 +68,11 @@ public class Principal {
         List<DataBook> resultados = datos.results();// tengo los resultados
         if (resultados.isEmpty()) {
             System.out.println("No se encontró el libro");
-            logicaPrincipal();
-        }else{
+
+        } else {
             servicio.guardarLibro(resultados.get(0));
         }
 
-        
     }
 
 }
