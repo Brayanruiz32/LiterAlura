@@ -9,11 +9,11 @@ import java.net.http.HttpResponse.BodyHandlers;
 
 public class ConexionAPI {
 
-    public int obtenerDatos() {
+    public String obtenerDatos(String titulo) {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://gutendex.com/books"))
+                .uri(URI.create("https://gutendex.com/books/?search="+titulo))
                 .build();
         HttpResponse<String> response = null;
         try {
@@ -23,7 +23,7 @@ public class ConexionAPI {
             throw new RuntimeException(e);
         }
 
-        return response.statusCode();
+        return response.body();
     }
 
 }
