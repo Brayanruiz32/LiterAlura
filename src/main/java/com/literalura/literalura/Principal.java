@@ -72,7 +72,14 @@ public class Principal {
         String json = connection.obtenerDatos(titulo);
         DataResults datos = convertidor.convertidora(json, DataResults.class);
         List<DataBook> resultados = datos.results();// tengo los resultados
-        servicio.guardarLibro(resultados.get(0));
+        if (resultados.isEmpty()) {
+            System.out.println("No se encontró el libro");
+            logicaPrincipal();
+        }else{
+            servicio.guardarLibro(resultados.get(0));
+        }
+
+        
     }
 
 }

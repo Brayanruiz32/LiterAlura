@@ -23,17 +23,6 @@ public class BookService {
     @Autowired
     private BookRepository repoBook;
 
-    // public List<Book> convertToBook(List<DataBook> datos) {
-
-    //     List<Book> myBooks = datos.stream()
-    //             .map(b -> new Book(b.id(), b.title(), b.language(), b.totalDownloads(),
-    //                     b.authors().stream().map(a -> new Author(a.name(), a.birthYear(), a.deathYear()))
-    //                             .collect(Collectors.toList())))
-    //             .collect(Collectors.toList());
-    //     return myBooks;
-
-    // }
-
     public void guardarLibro(DataBook d) {
         Optional<Book> libroBuscado = repoBook.findById(d.id());
         if (!libroBuscado.isPresent()) {
@@ -41,13 +30,13 @@ public class BookService {
             //List<Book> libros = new ArrayList<>();
             for (Author author : autores) {
                 if (author.getId() == null) {
-                   Book libro =  new Book(d.id(), d.title(), d.language(), d.totalDownloads(), d.authors()
+                   Book libro =  new Book(d.id(), d.title(), d.languages(), d.totalDownloads(), d.authors()
                    .stream().map(a -> new Author(a.name(), a.birthYear(), a.deathYear()))
                    .collect(Collectors.toList()));
                     repoBook.save(libro);
                     System.out.println("Se guardo el libro junto con sus autores");
                 }else{
-                    author.setBook(new Book(d.id(), d.title(), d.language(), d.totalDownloads()));
+                    author.setBook(new Book(d.id(), d.title(), d.languages(), d.totalDownloads()));
                 }
             }
         } else {
@@ -67,35 +56,5 @@ public class BookService {
         }
         return autores;
     }
-
-
-    // public void validarAutor(List<Author> autores) {
-
-    //     for (Author author : autores) {
-    //         String nombre = author.getName();
-    //         int fechaNacimiento = author.getYearBirth();
-    //         int fechaMuerte = author.getYearDeath();
-    //         Author autor = null;
-    //         autor = repoAuthor.buscarAutor(nombre, fechaNacimiento, fechaMuerte);
-    //         if (autor == null) {// validamos que sea el unico autor
-    //             repoAuthor.save(new Author(nombre, fechaNacimiento, fechaMuerte) );
-    //             System.out.println("Guardado el autor exitosamente!!! :D");
-    //         } else {
-    //             System.out.println("El autor ya existe :(");
-    //         }
-    //     }
-    // }
-
-    // public List<Author> convertToAuthor(List<Book> books) {
-    // List<Author> autores = books.stream().flatMap(b -> b.getAuthors().stream())
-    // .collect(Collectors.toList());
-    // List<Author> autoresFiltrados = new ArrayList<Author>();
-    // for (Author author : autores) {
-    // if (!autoresFiltrados.contains(author)) {
-    // autoresFiltrados.add(author);
-    // }
-    // }
-    // return autoresFiltrados;
-    // }
 
 }

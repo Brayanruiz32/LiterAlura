@@ -12,7 +12,7 @@ public record DataBook(
 
         @JsonAlias("title") String title,
 
-        @JsonAlias("languages") String language,
+        @JsonAlias("languages") List<String> languages,
 
         @JsonAlias("download_count") int totalDownloads,
 

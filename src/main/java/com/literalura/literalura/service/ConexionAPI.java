@@ -13,7 +13,7 @@ public class ConexionAPI {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://gutendex.com/books/?search="+titulo))
+                .uri(URI.create("https://gutendex.com/books/?search="+titulo.replace(" ", "+")))
                 .build();
         HttpResponse<String> response = null;
         try {

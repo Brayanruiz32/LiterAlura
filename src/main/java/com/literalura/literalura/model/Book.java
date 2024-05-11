@@ -3,6 +3,7 @@ package com.literalura.literalura.model;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -17,7 +18,8 @@ public class Book {
 
     private String title;
 
-    private String language;
+    @ElementCollection
+    private List<String> languages;
 
     private int totalDownloads;
 
@@ -26,18 +28,18 @@ public class Book {
     private List<Author> authors;
     
 
-    public Book(Long id, String title, String language, int totalDownloads, List<Author> authors) {
+    public Book(Long id, String title, List<String> language, int totalDownloads, List<Author> authors) {
         this.id = id;
         this.title = title;
-        this.language = language;
+        this.languages = language;
         this.totalDownloads = totalDownloads;
         this.authors = authors;
     }
 
-    public Book(Long id, String title, String language, int totalDownloads) {
+    public Book(Long id, String title, List<String> language, int totalDownloads) {
         this.id = id;
         this.title = title;
-        this.language = language;
+        this.languages = language;
         this.totalDownloads = totalDownloads;
     }
 
@@ -76,17 +78,17 @@ public class Book {
         this.authors = authors;
     }
 
-    public String getLanguage() {
-        return language;
+    public List<String> getLanguage() {
+        return languages;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
+    public void setLanguage(List<String> language) {
+        this.languages = language;
     }
 
     @Override
     public String toString() {
-        return "Book [id=" + id + ", title=" + title + ", language=" + language + ", totalDownloads=" + totalDownloads
+        return "Book [id=" + id + ", title=" + title + ", language=" + languages + ", totalDownloads=" + totalDownloads
                 + ", authors=" + authors + "]";
     }
 
