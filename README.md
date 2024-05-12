@@ -11,7 +11,7 @@
 ![Imagen](src/main/java/com/literalura/literalura/libroPortada.jpg)
 
 ## Descripción
-El proyecto abarca una serie de funcionalidades implementadas y relacionadas a la persistencia de datos. El proyecto provee una interfaz intuitiva al usuario mediante consola para que pueda realizar las consultas acerca de libros y sus respectivos autores, mostrando datos del libro como de su autor ya guardadas en una base de datos local. Este es un excelente proyecto en el que puedes comprobar la funcionalidad de persistencia de datos de forma local ;) 
+El proyecto abarca una serie de funcionalidades implementadas y relacionadas a la persistencia de datos. Provee una interfaz intuitiva al usuario mediante consola para que pueda realizar las consultas acerca de libros y sus respectivos autores, mostrando datos del libro como de su autor ya guardadas en una base de datos local. Este es un excelente proyecto en el que puedes comprobar la funcionalidad de persistencia de datos de forma local ;) 
 
 ## Funcionalidad
 (indagar en los puntos importantes de la logica de negocio)
