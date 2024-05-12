@@ -20,7 +20,7 @@ El proyecto abarca una serie de funcionalidades implementadas y relacionadas a l
 - `Visualizar datos estadisticos`: Al escoger esta opción se podrá visualizar todos los datos estadisticos generales de los libros como el numero promedio de descargas, el numero maximo de descargas, el valor minimo de descargas, etc. 
 - `Mostrar top 10 libros descargados`: Se visualizará por pantalla los 10 libros que tengan más descargas y que esten almacenadas en la base de datos.
 - `Buscar autor por nombre`: Se le pedira al usuario que ingrese un nombre que servirá como parametro y la aplicacion ejecutará una consulta a la base de datos haciendo una relación `JOIN` y trayendo los datos del nombre del autor ingresado.
-- `Listar autores que nacieron y murieron en un determinado rando de años`: Mediante consola el usuario ingresará un año que servirá como parametro de inicio y otro de fin para la consulta en la base de datos que devolverá una lista de autores que se encuentren tanto en nacimiento como en fallecimiento dentro de este rango
+- `Listar autores que nacieron y murieron en un determinado rando de años`: Mediante consola el usuario ingresará un año que servirá como parametro de inicio y otro de fin para la consulta en la base de datos que devolverá una lista de autores que se encuentren tanto en nacimiento como en fallecimiento dentro de este rango.
 ## 🕹️ Uso
 
 Menu inicial
