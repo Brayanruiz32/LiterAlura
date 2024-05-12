@@ -13,8 +13,16 @@
 ## Descripción
 El proyecto abarca una serie de funcionalidades implementadas y relacionadas a la persistencia de datos. Provee una interfaz intuitiva al usuario mediante consola para que pueda realizar las consultas acerca de libros y sus respectivos autores, mostrando datos del libro como de su autor ya guardadas previamente en una base de datos local. Este es un excelente proyecto en el que puedes comprobar la funcionalidad de persistencia de datos de forma local usando SpringBoot.
 
-## 🔨 Funcionalidad
+## 🔨 Funcionalidades
 - `Buscar libro por autor`:
+- `Listar libros registrados`
+- `Listar autores registrados`
+- `Listar autores vivos en un determinado año`
+- `Listar libros por idioma`
+- `Visualizar datos estadisticos`
+- `Mostrar top 10 libros descargados`
+- `Buscar autor por nombre`
+- `Listar autores que nacieron y murieron en un determinado rando de años`
 
 ## Uso
 
