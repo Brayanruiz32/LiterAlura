@@ -7,6 +7,7 @@
 6. [Autor](#autor)
    
 ## Descripción
+<h1>LiterAlura</h1>
 ![Imagen](src/main/java/com/literalura/literalura/libroPortada.jpg)
 
 ## Funcionalidad
