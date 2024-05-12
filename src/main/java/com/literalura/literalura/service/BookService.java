@@ -43,7 +43,7 @@ public class BookService {
             repoBook.save(nuevoLibro);// el libro se guarda
             System.out.println(nuevoLibro.toString());
         } else {
-            System.out.println("Existe el libro en la BD por lo tanto no será guardado");
+            System.out.println("No se puede registrar el mismo libro más de una vez");
         }
     }
 

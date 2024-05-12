@@ -58,11 +58,10 @@ public class Principal {
         System.out.println("Saliendo...");
     };
 
-
-
     private void listarLibroXIdioma() {
-        servicio.listAvailableLanguages();
+        // servicio.listAvailableLanguages();
         System.out.println("Ingresa el idioma de los libros que deseas visualizar");
+        System.out.println("es - español\nen - inglés\nfr - francés\npt - portugués");
         String lenguaje = teclado.nextLine();
         servicio.listBooksByLanguage(lenguaje);
     }
