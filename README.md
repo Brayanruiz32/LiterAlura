@@ -14,7 +14,7 @@
 El proyecto abarca una serie de funcionalidades implementadas y relacionadas a la persistencia de datos. Provee una interfaz intuitiva al usuario mediante consola para que pueda realizar las consultas acerca de libros y sus respectivos autores, mostrando datos del libro como de su autor ya guardadas previamente en una base de datos local. Este es un excelente proyecto en el que puedes comprobar la funcionalidad de persistencia de datos de forma local usando SpringBoot.
 
 ## 🔨 Funcionalidad
-
+- `Funcionalidad 1`: descripción de la funcionalidad 1- `Funcionalidad 2`: descripción de la funcionalidad 2- `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 2- `Funcionalidad 3`: descripción de la funcionalidad 3
 
 ## Uso
 
