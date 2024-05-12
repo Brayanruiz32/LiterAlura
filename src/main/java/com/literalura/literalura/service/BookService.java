@@ -69,6 +69,16 @@ public class BookService {
         authors.stream().forEach(System.out::println);
     }
 
+	public void listAuthorsAlive(int anio) {
+        List<Author> authors = repoBook.encontrarAutoresVivos(anio);
+        authors.stream().forEach(System.out::println);
+	}
+
+    public List<String> listAvailableLanguages() {
+        List<String> languages = repoBook.encontrarIdiomas();
+        return languages;
+    }
+
 
 
 

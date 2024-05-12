@@ -46,9 +46,9 @@ public class Principal {
                 case 4:
                 listarAutoresVivos();
                 break;
-                // case 5:
-                // listarLibroXIdioma();
-                // break;
+                case 5:
+                listarLibroXIdioma();
+                break;
                 default:
                     break;
             }
@@ -60,8 +60,16 @@ public class Principal {
         System.out.println("Saliendo...");
     }
 
+    private void listarLibroXIdioma() {
+       System.out.println("Ingresa el idioma de los libros que deseas visualizar");
+       List<String> languages = servicio.listAvailableLanguages();
+       
+    }
+
     private void listarAutoresVivos() {
+        System.out.println("Ingresa el año desde el que deseas ver vivo a los autores");
         int anio = Integer.parseInt(teclado.nextLine());
+        servicio.listAuthorsAlive(anio);
     }
 
     private void listarAutores() {
