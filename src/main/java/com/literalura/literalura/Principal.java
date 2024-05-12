@@ -52,7 +52,6 @@ public class Principal {
                 default:
                     break;
             }
-
             System.out.println(menu);
             opcion = Integer.parseInt(teclado.nextLine());
 
@@ -61,9 +60,10 @@ public class Principal {
     }
 
     private void listarLibroXIdioma() {
-       System.out.println("Ingresa el idioma de los libros que deseas visualizar");
         servicio.listAvailableLanguages();
-
+        System.out.println("Ingresa el idioma de los libros que deseas visualizar");
+        String lenguaje = teclado.nextLine();
+        servicio.listBooksByLanguage(lenguaje);
     }
 
     private void listarAutoresVivos() {

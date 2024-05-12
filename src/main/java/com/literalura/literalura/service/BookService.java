@@ -6,6 +6,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.hibernate.mapping.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -75,8 +76,13 @@ public class BookService {
 	}
 
     public void listAvailableLanguages() {
-        List<String> languages = repoBook.encontrarIdiomas();
-        languages.stream().forEach(System.out::println);
+         List<String> languages =  new ArrayList<>(repoBook.encontrarIdiomas());
+         languages.stream().forEach(System.out::println);
+    }
+
+    public void listBooksByLanguage(String lenguaje) {
+         List<Book> books = repoBook.encontrarLibroXIdioma(lenguaje); 
+         books.stream().forEach(System.out::println);
     }
 
 
