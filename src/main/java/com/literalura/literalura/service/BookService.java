@@ -74,9 +74,9 @@ public class BookService {
         authors.stream().forEach(System.out::println);
 	}
 
-    public List<String> listAvailableLanguages() {
+    public void listAvailableLanguages() {
         List<String> languages = repoBook.encontrarIdiomas();
-        return languages;
+        languages.stream().forEach(System.out::println);
     }
 
 

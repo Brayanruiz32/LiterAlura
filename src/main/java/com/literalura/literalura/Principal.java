@@ -62,8 +62,8 @@ public class Principal {
 
     private void listarLibroXIdioma() {
        System.out.println("Ingresa el idioma de los libros que deseas visualizar");
-       List<String> languages = servicio.listAvailableLanguages();
-       
+        servicio.listAvailableLanguages();
+
     }
 
     private void listarAutoresVivos() {
