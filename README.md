@@ -24,7 +24,7 @@ El proyecto abarca una serie de funcionalidades implementadas y relacionadas a l
 - `Buscar autor por nombre`
 - `Listar autores que nacieron y murieron en un determinado rando de años`
 
-## Uso
+## 🕹️ Uso
 
 Menu inicial
 
@@ -40,18 +40,18 @@ Menu inicial
                 0 - Salir de la aplicación
 
 
-## Ayuda
+## ℹ️ Ayuda
 (adjuntar links de interes necesarios para el desarrollo de la app)
 
 
 
-## Tecnologias
+## ✔️ Tecnologias
 - Gson
 - Hibernate 
 - Mysql 
 - Postman 
 
-## Autor
+## 👨‍💻 Autor
 (mencionarme a mi y quien soy)
 
 
