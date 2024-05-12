@@ -2,9 +2,8 @@
 1. [Descripción](#descripción)
 2. [Funcionalidad](#funcionalidad)
 3. [Uso](#uso)
-4. [Ayuda](#ayuda)
-5. [Tecnologias](#tecnologias)
-6. [Autor](#autor)
+4. [Tecnologias](#tecnologias)
+5. [Autor](#autor)
    
 <h1>LiterAlura</h1>
 
