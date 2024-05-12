@@ -7,7 +7,7 @@
 6. [Autor](#autor)
    
 ## Descripción
-(Agregar imagen y titulo de portada)
+![Imagen](src/main/java/com/literalura/literalura/libroPortada.jpg)
 
 ## Funcionalidad
 (indagar en los puntos importantes de la logica de negocio)
