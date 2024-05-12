@@ -14,7 +14,7 @@
 El proyecto abarca una serie de funcionalidades implementadas y relacionadas a la persistencia de datos. Provee una interfaz intuitiva al usuario mediante consola para que pueda realizar las consultas acerca de libros y sus respectivos autores, mostrando datos del libro como de su autor ya guardadas previamente en una base de datos local. Este es un excelente proyecto en el que puedes comprobar la funcionalidad de persistencia de datos de forma local usando SpringBoot.
 
 ## 🔨 Funcionalidades
-- `Buscar libro por autor`: Se realizará una busqueda mediante la biblioteca de (HttpRequest)[https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.net.http/java/net/http/HttpRequest.html] 
+- `Buscar libro por autor`: Se realizará una busqueda mediante la biblioteca de [HttpRequest](https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.net.http/java/net/http/HttpRequest.html) 
 - `Listar libros registrados`
 - `Listar autores registrados`
 - `Listar autores vivos en un determinado año`
