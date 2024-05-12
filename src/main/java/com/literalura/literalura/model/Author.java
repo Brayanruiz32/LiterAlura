@@ -2,6 +2,7 @@ package com.literalura.literalura.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -62,7 +63,11 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author [name=" + name + ", yearBirth=" + yearBirth + ", yearDeath=" + yearDeath + "]";
+        return " Autor: "+this.name+
+        "\n Fecha de Nacimiento: "+this.yearBirth+
+        "\n Fecha de Fallecimiento: "+this.yearDeath+
+        "\n Libros: "+ this.getBook().stream().map(b -> b.getTitle()).collect(Collectors.toList())+
+        "\n";
     }
 
     public Long getId() {

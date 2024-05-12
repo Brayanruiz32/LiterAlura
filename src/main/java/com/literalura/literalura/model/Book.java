@@ -2,6 +2,7 @@ package com.literalura.literalura.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.ElementCollection;
@@ -83,8 +84,11 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book [id=" + id + ", title=" + title + ", language=" + languages + ", totalDownloads=" + totalDownloads
-                + ", authors=" + authors + "]";
+        return "----- LIBRO ---- \n Titulo: "+this.getTitle() 
+        +" \n Autor(es): "+  String.join(" y ", this.getAuthors().stream().map(a -> a.getName()).collect(Collectors.toList())) 
+        +" \n Idioma: "+ String.join(", ", this.getLanguage()) 
+        +" \n Numero de descargas: "+this.getTotalDownloads()
+        +" \n----------------";
     }
 
 }

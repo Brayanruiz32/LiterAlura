@@ -41,12 +41,7 @@ public class BookService {
                 }
             }
             repoBook.save(nuevoLibro);// el libro se guarda
-            System.out.println("----- LIBRO ---- \n Titulo: "+nuevoLibro.getTitle() 
-            +" \n Autor(es): "+  String.join(" y ", nuevoLibro.getAuthors().stream().map(a -> a.getName()).collect(Collectors.toList())) 
-            +" \n Idioma: "+ String.join(", ", nuevoLibro.getLanguage()) 
-            +" \n Numero de descargas: "+nuevoLibro.getTotalDownloads()
-            +" \n----------------");
-            
+            System.out.println(nuevoLibro.toString());
         } else {
             System.out.println("Existe el libro en la BD por lo tanto no será guardado");
         }
@@ -72,7 +67,7 @@ public class BookService {
 
     public void listAuthors() {
         List<Author> authors = repoBook.encontrarAutores();
-        authors.stream().forEach(System.out::println);
+        authors.forEach(a -> System.out.println(a.toString()));
     }
 
 	public void listAuthorsAlive(int anio) {
