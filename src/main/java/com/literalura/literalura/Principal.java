@@ -27,11 +27,15 @@ public class Principal {
                 3 - Listar autores registrados
                 4 - Listar autores vivos en un determinado año
                 5 - Listar libros por idioma
-                6 - Salir de la aplicación
+                6 - Visualizar datos estadisticos
+                7 - Mostrar top 10 libros descargados
+                8 - Buscar autor por nombre
+                9 - Listar autores vivos en un determinado rango de años
+                0 - Salir de la aplicación
                 """;
         System.out.println(menu);
         int opcion = Integer.parseInt(teclado.nextLine());
-        while (opcion != 6) {
+        while (opcion != 10) {
             switch (opcion) {
                 case 1:
                     buscarLibro();
@@ -48,8 +52,20 @@ public class Principal {
                 case 5:
                     listarLibroXIdioma();
                     break;
+                case 6:
+                    mostrarDatosEstadisticos();
+                    break;
+                // case 7:
+                //     listarTop10Libros();
+                //     break;
+                // case 8:
+                //     buscarAutorXNombre();
+                //     break;
+                // case 9:
+                //     listarAutoresVivosDentroDeRango();
+                //     break;
                 default:
-                    System.out.println("Opción invalida, vuelva a ingresar ");
+                System.out.println("Opción invalida, vuelva a ingresar otra valida ");
                     break;
             }
             System.out.println(menu);
@@ -57,6 +73,10 @@ public class Principal {
         }
         System.out.println("Saliendo...");
     };
+
+    private void mostrarDatosEstadisticos() {
+        servicio.getStadisticData();
+    }
 
     private void listarLibroXIdioma() {
         // servicio.listAvailableLanguages();

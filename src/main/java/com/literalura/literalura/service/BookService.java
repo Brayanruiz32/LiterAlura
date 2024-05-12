@@ -1,6 +1,8 @@
 package com.literalura.literalura.service;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -81,6 +83,20 @@ public class BookService {
     public void listBooksByLanguage(String lenguaje) {
          List<Book> books = repoBook.encontrarLibroXIdioma(lenguaje); 
          books.stream().forEach(System.out::println);
+    }
+
+    public void getStadisticData() {
+        List<Book> books = repoBook.findAll();
+        ArrayList<Book> libros = new ArrayList<Book>(books);
+        DoubleSummaryStatistics data = libros.stream().collect(Collectors.summarizingDouble(Book::getTotalDownloads));
+        System.out.println(
+        "----- DATOS LIBROS -----"+
+        "\nMedia de descargas: "+ String.format("%1.2f", data.getAverage())+
+        "\nMayor descargada: "+data.getMax()+
+        "\nMenor descargada "+data.getMin()+
+        "\nCantidad de libros almacenados: "+data.getCount()+
+        "\n------------------------------");
+
     }
 
 
