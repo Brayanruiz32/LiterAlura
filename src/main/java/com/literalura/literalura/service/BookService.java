@@ -41,7 +41,12 @@ public class BookService {
                 }
             }
             repoBook.save(nuevoLibro);// el libro se guarda
-            System.out.println("Se ejecutó la carga del libro y autores a la bd");
+            System.out.println("----- LIBRO ---- \n Titulo: "+nuevoLibro.getTitle() 
+            +" \n Autor(es): "+  String.join(" y ", nuevoLibro.getAuthors().stream().map(a -> a.getName()).collect(Collectors.toList())) 
+            +" \n Idioma: "+ String.join(", ", nuevoLibro.getLanguage()) 
+            +" \n Numero de descargas: "+nuevoLibro.getTotalDownloads()
+            +" \n----------------");
+            
         } else {
             System.out.println("Existe el libro en la BD por lo tanto no será guardado");
         }

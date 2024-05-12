@@ -20,8 +20,7 @@ public class Principal {
         this.servicio = servicio;
     }
 
-    public void logicaPrincipal() {
-
+    public void mostrarMenu(){
         String menu = """
                 1 - Buscar libro por titulo
                 2 - Listar libros registrados
@@ -38,26 +37,28 @@ public class Principal {
                     buscarLibro();
                     break;
                 case 2:
-                listarLibros();
-                break;
+                    listarLibros();
+                    break;
                 case 3:
-                listarAutores();
-                break;
+                    listarAutores();
+                    break;
                 case 4:
-                listarAutoresVivos();
-                break;
+                    listarAutoresVivos();
+                    break;
                 case 5:
-                listarLibroXIdioma();
-                break;
+                    listarLibroXIdioma();
+                    break;
                 default:
+                    System.out.println("Opción invalida, vuelva a ingresar ");
                     break;
             }
             System.out.println(menu);
             opcion = Integer.parseInt(teclado.nextLine());
-
         }
         System.out.println("Saliendo...");
-    }
+    };
+
+
 
     private void listarLibroXIdioma() {
         servicio.listAvailableLanguages();
@@ -87,8 +88,7 @@ public class Principal {
         DataResults datos = convertidor.convertidora(json, DataResults.class);
         List<DataBook> resultados = datos.results();// tengo los resultados
         if (resultados.isEmpty()) {
-            System.out.println("No se encontró el libro");
-
+            System.out.println("Libro no encontrado");
         } else {
             servicio.saveBook(resultados.get(0));
         }
