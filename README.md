@@ -6,10 +6,12 @@
 5. [Tecnologias](#tecnologias)
 6. [Autor](#autor)
    
-## Descripción
 <h1>LiterAlura</h1>
 
 ![Imagen](src/main/java/com/literalura/literalura/libroPortada.jpg)
+
+## Descripción
+
 
 ## Funcionalidad
 (indagar en los puntos importantes de la logica de negocio)
