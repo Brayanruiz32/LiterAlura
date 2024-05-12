@@ -1,10 +1,10 @@
 # Índice 
-*[Descripción](#descripción)
-*[Funcionalidad](#funcionalidad)
-*[Uso](#uso)
-*[Ayuda](#ayuda)
-*[Tecnologias](#tecnologias)
-*[Autor](#autor)
+1. [Descripción](#descripción)
+2. [Funcionalidad](#funcionalidad)
+3. [Uso](#uso)
+4. [Ayuda](#ayuda)
+5. [Tecnologias](#tecnologias)
+6. [Autor](#autor)
    
 <h1>LiterAlura</h1>
 
