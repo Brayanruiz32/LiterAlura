@@ -9,6 +9,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinColumns;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 
@@ -20,30 +21,21 @@ public class Book {
 
     private String title;
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     private List<String> languages;
 
     private int totalDownloads;
-
-    @JoinTable(name = "book_author", joinColumns = @JoinColumn(name = "book_id"), inverseJoinColumns = @JoinColumn(name = "author_id"))
-    @ManyToMany(cascade = CascadeType.ALL)
-    private List<Author> authors;
     
-
-    public Book(Long id, String title, List<String> language, int totalDownloads, List<Author> authors) {
-        this.id = id;
-        this.title = title;
-        this.languages = language;
-        this.totalDownloads = totalDownloads;
-        this.authors = authors;
-    }
+    @JoinTable(name = "book_author", joinColumns = @JoinColumn(name = "book_id"), inverseJoinColumns = @JoinColumn(name = "author_id"))
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Author> authors = new ArrayList<Author>();;
+    
 
     public Book(Long id, String title, List<String> language, int totalDownloads) {
         this.id = id;
         this.title = title;
         this.languages = language;
         this.totalDownloads = totalDownloads;
-        this.authors = new ArrayList<Author>();
     }
 
     public Book() {
@@ -77,8 +69,8 @@ public class Book {
         return authors;
     }
 
-    public void setAuthors(Author authors) {
-        this.authors.add(authors);
+    public void addAuthor(Author author) {
+        this.authors.add(author);
     }
 
     public List<String> getLanguage() {

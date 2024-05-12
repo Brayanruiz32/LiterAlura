@@ -37,15 +37,15 @@ public class Principal {
                 case 1:
                     buscarLibro();
                     break;
-                // case 2:
-                // listarLibros();
-                // break;
-                // case 3:
-                // listarAutores();
-                // break;
-                // case 4:
-                // listarAutoresVivos();
-                // break;
+                case 2:
+                listarLibros();
+                break;
+                case 3:
+                listarAutores();
+                break;
+                case 4:
+                listarAutoresVivos();
+                break;
                 // case 5:
                 // listarLibroXIdioma();
                 // break;
@@ -60,6 +60,18 @@ public class Principal {
         System.out.println("Saliendo...");
     }
 
+    private void listarAutoresVivos() {
+        int anio = Integer.parseInt(teclado.nextLine());
+    }
+
+    private void listarAutores() {
+        servicio.listAuthors();
+    }
+
+    private void listarLibros() {
+        servicio.listBooks();
+    }
+
     public void buscarLibro() {
         System.out.println("Ingrese el nombre del libro que desea buscar");
         String titulo = teclado.nextLine();
@@ -70,7 +82,7 @@ public class Principal {
             System.out.println("No se encontró el libro");
 
         } else {
-            servicio.guardarLibro(resultados.get(0));
+            servicio.saveBook(resultados.get(0));
         }
 
     }

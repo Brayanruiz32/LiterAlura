@@ -1,5 +1,6 @@
 package com.literalura.literalura.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -23,14 +24,14 @@ public class Author {
 
     private int yearDeath;
 
-    @ManyToMany(mappedBy = "authors", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<Book> book;
+    @ManyToMany(mappedBy = "authors", fetch = FetchType.EAGER)
+    private List<Book> books = new ArrayList<>();
 
     public Author(String name, int yearBirth, int yearDeath) {
         this.name = name;
         this.yearBirth = yearBirth;
         this.yearDeath = yearDeath;  
-    }
+    } 
 
     public Author() {
     }
@@ -73,14 +74,11 @@ public class Author {
     }
 
     public List<Book> getBook() {
-        return book;
+        return books;
     }
 
-    public void setBook(Book book) {
-        this.book.add(book);
+    public void addBook(Book book) {
+        this.books.add(book);
     }
-
-    
-    
 
 }
