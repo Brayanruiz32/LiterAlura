@@ -20,7 +20,7 @@ public class Principal {
         this.servicio = servicio;
     }
 
-    public void mostrarMenu(){
+    public void mostrarMenu() {
         String menu = """
                 1 - Buscar libro por titulo
                 2 - Listar libros registrados

@@ -33,11 +33,9 @@ public class BookService {
             for (Author author : autores) {
                 if (author.getId() == null) {
                     nuevoLibro.addAuthor(author);
-                    System.out.println("Se guardó el libro junto con un autor nuevo");
                 } else {
                     Optional<Author> autorActual = repoAuthor.findById(author.getId());
                     nuevoLibro.addAuthor(autorActual.get());
-                    System.out.println("Se guardó un nuevo libro con un autor ya existente");
                 }
             }
             repoBook.save(nuevoLibro);// el libro se guarda
