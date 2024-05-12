@@ -36,8 +36,8 @@ public class BookService {
                 if (author.getId() == null) {
                     nuevoLibro.addAuthor(author);
                 } else {
-                    Optional<Author> autorActual = repoAuthor.findById(author.getId());
-                    nuevoLibro.addAuthor(autorActual.get());
+                   // Optional<Author> autorActual = repoAuthor.findById(author.getId());
+                    nuevoLibro.addAuthor(author);
                 }
             }
             repoBook.save(nuevoLibro);// el libro se guarda
@@ -98,6 +98,21 @@ public class BookService {
         "\n------------------------------");
 
     }
+
+    public void getTopBooks() {
+        List<Book> libros = repoBook.encontrarTop10Libros();
+        libros.forEach(System.out::println);
+    }
+
+    public void getAutor(String nombre) {
+        Author author = repoBook.encontrarAutor(nombre); 
+        System.out.println(author.toString());
+    }
+
+	public void getAuthorsAliveRange(int anioDesde, int anioHasta) {
+		List<Author> autores = repoBook.encontrarAutoresVivosRango(anioDesde, anioHasta);
+        autores.forEach(System.out::println);
+	}
 
 
 

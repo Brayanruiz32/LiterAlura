@@ -30,7 +30,7 @@ public class Principal {
                 6 - Visualizar datos estadisticos
                 7 - Mostrar top 10 libros descargados
                 8 - Buscar autor por nombre
-                9 - Listar autores vivos en un determinado rango de años
+                9 - Listar autores que nacieron y murieron en un determinado rango de años
                 0 - Salir de la aplicación
                 """;
         System.out.println(menu);
@@ -55,15 +55,15 @@ public class Principal {
                 case 6:
                     mostrarDatosEstadisticos();
                     break;
-                // case 7:
-                //     listarTop10Libros();
-                //     break;
-                // case 8:
-                //     buscarAutorXNombre();
-                //     break;
-                // case 9:
-                //     listarAutoresVivosDentroDeRango();
-                //     break;
+                case 7:
+                    listarTop10Libros();
+                    break;
+                case 8:
+                    buscarAutorXNombre();
+                    break;
+                case 9:
+                    listarAutoresVivosDentroDeRango();
+                    break;
                 default:
                 System.out.println("Opción invalida, vuelva a ingresar otra valida ");
                     break;
@@ -73,6 +73,24 @@ public class Principal {
         }
         System.out.println("Saliendo...");
     };
+
+    private void listarAutoresVivosDentroDeRango() {
+        System.out.println("Ingresa el año desde el que deseas buscar los autores vivos");
+        int anioDesde = Integer.parseInt(teclado.nextLine());
+        System.out.println("Ingresa el año hasta el que deseas buscar los autores vivos ");
+        int anioHasta = Integer.parseInt(teclado.nextLine());
+        servicio.getAuthorsAliveRange(anioDesde, anioHasta);
+    }
+
+    private void buscarAutorXNombre() {
+        System.out.println("Ingresa el nombre del autor que deseas buscar");
+        String nombre = teclado.nextLine();
+        servicio.getAutor(nombre);
+    }
+
+    private void listarTop10Libros() {
+        servicio.getTopBooks();
+    }
 
     private void mostrarDatosEstadisticos() {
         servicio.getStadisticData();
