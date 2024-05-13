@@ -36,8 +36,8 @@ Menu inicial
                 0 - Salir de la aplicación
 
 ## ✔️ Tecnologias
-- (Gson)[https://mvnrepository.com/artifact/com.google.code.gson/gson]
-- (Hibernate)[https://hibernate.org/] 
+- [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson)
+- [Hibernate](https://hibernate.org/) 
 - (Mysql)[https://www.mysql.com/] 
 - (Postman)[https://www.postman.com/]
 - (SpringBoot)[https://spring.io/projects/spring-boot]
