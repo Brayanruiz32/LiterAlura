@@ -22,19 +22,20 @@ El proyecto abarca una serie de funcionalidades implementadas y relacionadas a l
 - `Listar autores que nacieron y murieron en un determinado rando de años`: Mediante consola el usuario ingresará un año que servirá como parametro de inicio y otro de fin para la consulta en la base de datos que devolverá una lista de autores que se encuentren tanto en nacimiento como en fallecimiento dentro de este rango.
 ## 🕹️ Uso
 
-Menu inicial
 
-                1 - Buscar libro por titulo
-                2 - Listar libros registrados
-                3 - Listar autores registrados
-                4 - Listar autores vivos en un determinado año
-                5 - Listar libros por idioma
-                6 - Visualizar datos estadisticos
-                7 - Mostrar top 10 libros descargados
-                8 - Buscar autor por nombre
-                9 - Listar autores que nacieron y murieron en un determinado rango de años
-                0 - Salir de la aplicación
-
+```
+--------------MENU--------------------
+1 - Buscar libro por titulo
+2 - Listar libros registrados
+3 - Listar autores registrados
+4 - Listar autores vivos en un determinado año
+5 - Listar libros por idioma
+6 - Visualizar datos estadisticos
+7 - Mostrar top 10 libros descargados
+8 - Buscar autor por nombre
+9 - Listar autores que nacieron y murieron en un determinado rango de años
+0 - Salir de la aplicación
+```
 Luego se selecciona la opción a ejecutar
 ```
 Selecciona una de las opciones listadas
@@ -42,6 +43,9 @@ Selecciona una de las opciones listadas
 1
 Ingrese el nombre del libro que desea buscar
 CRIME AND PUNI
+```
+Salida confirmada por consola de la inserción a la Base de datos
+```
 ----- LIBRO ---- 
  Titulo: Crime and Punishment
  Autor(es): Dostoyevsky, Fyodor
