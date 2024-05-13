@@ -1,6 +1,6 @@
 # Índice 
 1. [Descripción](#descripción)
-2. [Funcionalidad](#funcionalidad)
+2. [Funcionalidades](#funcionalidades)
 3. [Uso](#uso)
 4. [Tecnologias](#tecnologias)
 5. [Autor](#autor)
