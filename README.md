@@ -37,7 +37,8 @@ Esta será la salida por consola del menú con sus diferentes opciones:
 9 - Listar autores que nacieron y murieron en un determinado rango de años
 0 - Salir de la aplicación
 ```
-Se selecciona la opción a ejecutar *(en nuestro caso la 1)*
+1. Se selecciona la opción a ejecutar *(en nuestro caso la 1)* 
+2. Se ingresará el titulo del libro *(en nuestro caso un fragmento del titulo de un libro llamado CRIME AND PUNI)*
 ```
 Selecciona una de las opciones listadas
 
@@ -45,7 +46,7 @@ Selecciona una de las opciones listadas
 Ingrese el nombre del libro que desea buscar
 CRIME AND PUNI
 ```
-Salida confirmada por consola de la inserción a la Base de datos
+3. Para confirmar la inserción del nuevo libro se debe visualizar los datos del libro ingresado por consola
 ```
 ----- LIBRO ---- 
  Titulo: Crime and Punishment
