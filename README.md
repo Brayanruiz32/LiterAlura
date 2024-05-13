@@ -21,8 +21,8 @@ El proyecto abarca una serie de funcionalidades implementadas y relacionadas a l
 - `Buscar autor por nombre`: Se le pedira al usuario que ingrese un nombre que servirá como parametro y la aplicacion ejecutará una consulta a la base de datos haciendo una relación `JOIN` y trayendo los datos del nombre del autor ingresado.
 - `Listar autores que nacieron y murieron en un determinado rando de años`: Mediante consola el usuario ingresará un año que servirá como parametro de inicio y otro de fin para la consulta en la base de datos que devolverá una lista de autores que se encuentren tanto en nacimiento como en fallecimiento dentro de este rango.
 ## 🕹️ Uso
-
-
+El uso de la aplicación es amigable para cualquier tipo de usuario que lo desee verificar y probar. Por lo siguiente, se hace una demostración del uso.
+### Ejemplo de inserción a la base de datos (opción 1)
 ```
 --------------MENU--------------------
 1 - Buscar libro por titulo
@@ -36,7 +36,7 @@ El proyecto abarca una serie de funcionalidades implementadas y relacionadas a l
 9 - Listar autores que nacieron y murieron en un determinado rango de años
 0 - Salir de la aplicación
 ```
-Luego se selecciona la opción a ejecutar
+Luego se selecciona la opción a ejecutar 
 ```
 Selecciona una de las opciones listadas
 
