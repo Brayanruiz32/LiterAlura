@@ -36,7 +36,7 @@ Menu inicial
                 0 - Salir de la aplicación
 
 Luego se selecciona la opción a ejecutar
-
+```
 Selecciona una de las opciones listadas
 
 1
@@ -48,6 +48,7 @@ CRIME AND PUNI
  Idioma: en
  Numero de descargas: 23473
 ----------------
+```
 
 ## ✔️ Tecnologias
 Hice uso de las siguientes tecnologias para lograr la construccion de este proyecto.
