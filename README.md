@@ -48,7 +48,7 @@ CRIME AND PUNI
  Numero de descargas: 23473
 ----------------
 ```
-
+Te invito a probar las demás funcionalidades y a sumergirte en el tema por ti mismo 🤟
 ## ✔️ Tecnologias
 Hice uso de las siguientes tecnologias para lograr la construccion de este proyecto.
 - [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson)
