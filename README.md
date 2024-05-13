@@ -35,7 +35,22 @@ Menu inicial
                 9 - Listar autores que nacieron y murieron en un determinado rango de años
                 0 - Salir de la aplicación
 
+Luego se selecciona la opción a ejecutar
+
+Selecciona una de las opciones listadas
+
+1
+Ingrese el nombre del libro que desea buscar
+CRIME AND PUNI
+----- LIBRO ---- 
+ Titulo: Crime and Punishment
+ Autor(es): Dostoyevsky, Fyodor
+ Idioma: en
+ Numero de descargas: 23473
+----------------
+
 ## ✔️ Tecnologias
+Hice uso de las siguientes tecnologias para lograr la construccion de este proyecto.
 - [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson)
 - [Hibernate](https://hibernate.org/) 
 - [Mysql](https://www.mysql.com/)
