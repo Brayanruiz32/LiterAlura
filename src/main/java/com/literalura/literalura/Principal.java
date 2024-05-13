@@ -22,6 +22,7 @@ public class Principal {
 
     public void mostrarMenu() {
         String menu = """
+                ----------------MENU-------------------
                 1 - Buscar libro por titulo
                 2 - Listar libros registrados
                 3 - Listar autores registrados
@@ -32,6 +33,7 @@ public class Principal {
                 8 - Buscar autor por nombre
                 9 - Listar autores que nacieron y murieron en un determinado rango de años
                 0 - Salir de la aplicación
+                Selecciona una de las opciones listadas
                 """;
         System.out.println(menu);
         int opcion = Integer.parseInt(teclado.nextLine());
