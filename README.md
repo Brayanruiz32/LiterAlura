@@ -38,11 +38,11 @@ Menu inicial
 ## ✔️ Tecnologias
 - [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson)
 - [Hibernate](https://hibernate.org/) 
-- (Mysql)[https://www.mysql.com/] 
-- (Postman)[https://www.postman.com/]
-- (SpringBoot)[https://spring.io/projects/spring-boot]
-- (Visual Studio Code)[https://code.visualstudio.com/]
-- (Spring Initializr)[https://start.spring.io/]
+- [Mysql](https://www.mysql.com/)
+- [Postman](https://www.postman.com/)
+- [SpringBoot](https://spring.io/projects/spring-boot)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Spring Initializr](https://start.spring.io/)
 
 ## 👨‍💻 Autor
 Soy Brayan Ruiz Marreros, al momento de subir este proyecto tengo 23 años, soy egresado de la carrera de Ingeniería de Sistemas e Informática, me apasionan los retos y me gusta aprender cosas nuevas de programación. Veo alguna serie o pelicula en mis ratos libres y juego Age Of Empires 
