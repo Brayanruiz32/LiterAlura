@@ -8,7 +8,7 @@
 <h1>LiterAlura</h1>
 <img src="src/main/java/com/literalura/literalura/libroPortada.jpg" width="600">
 
-## Descripción
+## 📖 Descripción
 El proyecto abarca una serie de funcionalidades implementadas y relacionadas a la persistencia de datos. Provee una interfaz intuitiva al usuario mediante consola para que pueda realizar las consultas acerca de libros y sus respectivos autores, mostrando datos del libro como de su autor ya guardadas previamente en una base de datos local. Este es un excelente proyecto en el que puedes comprobar la funcionalidad de persistencia de datos de forma local usando SpringBoot.
 ## 🔨 Funcionalidades
 - `Buscar libro por autor`: La aplicación realizará una petición mediante [HttpRequest](https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.net.http/java/net/http/HttpRequest.html) y la recibirá mediante [HttpResponse](https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.net.http/java/net/http/HttpResponse.html), para luego utilizar una herramienta llamada [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson), el cual permitira deserializar la respuesta haciendo uso de un [DTO](https://www.arquitecturajava.com/data-transfer-object-dto-un-concepto-clave/)(Data Transfer Object) en forma de Record del libro y autor; y finalmente guardarla en la base de datos.
