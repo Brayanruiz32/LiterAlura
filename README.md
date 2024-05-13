@@ -60,7 +60,7 @@ Hice uso de las siguientes tecnologias para lograr la construccion de este proye
 - [Spring Initializr](https://start.spring.io/)
 - [Gutendex](https://gutendex.com/)
 
-## 👨‍💻 Autor
+## 👨‍💻 Sobre el Autor
 Soy Brayan Ruiz Marreros, al momento de subir este proyecto tengo 23 años, soy egresado de la carrera de Ingeniería de Sistemas e Informática, me motivan los desafios y me gusta aprender cosas nuevas en el rubro de la programación. En mis ratos libres veo alguna serie o pelicula y juego Age Of Empires🏰. 
 
 
