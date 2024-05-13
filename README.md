@@ -1,10 +1,3 @@
-# Índice 
-1. [Descripción](#📖descripción)
-2. [Funcionalidades](#funcionalidades)
-3. [Uso](#uso)
-4. [Tecnologias](#tecnologias)
-5. [Autor](#autor)
-   
 <h1>LiterAlura</h1>
 <img src="src/main/java/com/literalura/literalura/libroPortada.jpg" width="600">
 
