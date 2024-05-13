@@ -23,6 +23,7 @@ El proyecto abarca una serie de funcionalidades implementadas y relacionadas a l
 ## 🕹️ Uso
 El uso de la aplicación es amigable para cualquier tipo de usuario que lo desee verificar y probar. Por lo siguiente, se hace una demostración del uso.
 ### Ejemplo de inserción a la base de datos (opción 1)
+Esta será la salida por consola del menú con sus diferentes opciones:
 ```
 --------------MENU--------------------
 1 - Buscar libro por titulo
@@ -36,7 +37,7 @@ El uso de la aplicación es amigable para cualquier tipo de usuario que lo desee
 9 - Listar autores que nacieron y murieron en un determinado rango de años
 0 - Salir de la aplicación
 ```
-Luego se selecciona la opción a ejecutar 
+Se selecciona la opción a ejecutar *(en nuestro caso la 1)*
 ```
 Selecciona una de las opciones listadas
 
