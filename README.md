@@ -61,7 +61,7 @@ Hice uso de las siguientes tecnologias para lograr la construccion de este proye
 - [Gutendex](https://gutendex.com/)
 
 ## 👨‍💻 Autor
-Soy Brayan Ruiz Marreros, al momento de subir este proyecto tengo 23 años, soy egresado de la carrera de Ingeniería de Sistemas e Informática, me apasionan los retos y me gusta aprender cosas nuevas de programación. Veo alguna serie o pelicula en mis ratos libres y juego Age Of Empires 
+Soy Brayan Ruiz Marreros, al momento de subir este proyecto tengo 23 años, soy egresado de la carrera de Ingeniería de Sistemas e Informática, me motivan los desafios y me gusta aprender cosas nuevas en el rubro de la programación. En mis ratos libres veo alguna serie o pelicula y juego Age Of Empires🏰. 
 
 
 
